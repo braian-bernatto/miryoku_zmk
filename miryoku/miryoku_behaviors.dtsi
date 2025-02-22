@@ -7,15 +7,21 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <175>;             // Enable tap-tap-hold to repeat
+      require-prior-idle-ms = <100>;    // Helps with quick typing
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <0>;  // Trigger hold on any key press
+      hold-trigger-on-release;    // Evaluate hold on key release
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <175>;             // Enable tap-tap-hold to repeat
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
+      retro-tap;                        // Output tap on release if no other key pressed
     };
   };
 };
