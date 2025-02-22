@@ -8,7 +8,7 @@
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <175>;             // Enable tap-tap-hold to repeat
-      require-prior-idle-ms = <100>;    // Helps with quick typing
+      require-prior-idle-ms = <150>;    // Helps with quick typing
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <0>;  // Trigger hold on any key press
