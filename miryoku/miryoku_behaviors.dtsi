@@ -7,12 +7,11 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <200>;             // Time window for double-tap
-      flavor = "hold-preferred";         // Changed to hold-preferred
+      flavor = "balanced";              // Good compromise between tap and hold
+      tapping-term-ms = <200>;          // Standard typing timeout
+      quick-tap-ms = <200>;             // Enable tap-tap-hold to repeat
+      require-prior-idle-ms = <150>;    // Helps when typing quickly
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <0>;  
-      hold-trigger-on-release;          
-      global-quick-tap;                 // Enable double-tap detection
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
