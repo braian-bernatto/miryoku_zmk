@@ -7,12 +7,14 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <175>;             // Enable tap-tap-hold to repeat
-      require-prior-idle-ms = <150>;    // Helps with quick typing
-      flavor = "tap-preferred";
+      quick-tap-ms = <200>;             // Increased to better handle double-taps
+      require-prior-idle-ms = <150>;    // Keep this for typing flow
+      flavor = "balanced";              // Changed to balanced for better tap/hold discrimination
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <0>;  // Trigger hold on any key press
-      hold-trigger-on-release;    // Evaluate hold on key release
+      hold-trigger-key-positions = <0>;  
+      hold-trigger-on-release;          
+      global-quick-tap;                 // Add this to prevent double-taps when rolling keys
+      hold-while-undecided;            // Add this to improve modifier behavior
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
