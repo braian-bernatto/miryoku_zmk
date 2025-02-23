@@ -9,4 +9,6 @@
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 
 // Define the main U_MT macro that selects left or right based on position
-#define U_MT(MOD, TAP) U_MT_L(MOD, TAP)
+#define U_MT(MOD, TAP) \
+    ((TAP) == A || (TAP) == S || (TAP) == D || (TAP) == F) ? \
+    U_MT_L(MOD, TAP) : U_MT_R(MOD, TAP)
