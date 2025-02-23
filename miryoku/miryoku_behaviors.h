@@ -50,6 +50,4 @@ ZMK_HOLD_TAP(lt,
 #define U_LT(LAYER, TAP) &lt LAYER TAP
 
 // Use left or right home row mods based on key position (for QWERTY layout)
-#define U_MT(MOD, TAP) \
-    ((TAP) == J || (TAP) == K || (TAP) == L || (TAP) == SQT) ? \
-    U_MT_R(MOD, TAP) : U_MT_L(MOD, TAP)
+#define U_MT(MOD, TAP) U_MT_L(MOD, TAP)
