@@ -15,5 +15,4 @@ jobs:
       tap: '["qwerty"]'
       clipboard: '["mac"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y CONFIG_ZMK_MOUSE_TICK_DURATION=8 CONFIG_ZMK_MOUSE_DEFAULT_MOVE_VAL=1500"]'
-      branches: '["zmkfirmware/zmk/main petejohanson/zmk/feat/pointers-move-scroll"]'
+      branches: '["caksoylar/zmk/feat/mouse-keys-3.2"]'
