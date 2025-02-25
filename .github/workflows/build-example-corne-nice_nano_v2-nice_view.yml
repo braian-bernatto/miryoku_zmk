@@ -15,4 +15,5 @@ jobs:
       tap: '["qwerty"]'
       clipboard: '["mac"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '["caksoylar/zmk/feat/mouse-keys-3.2"]'
