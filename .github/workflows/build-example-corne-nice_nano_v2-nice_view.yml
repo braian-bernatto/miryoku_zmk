@@ -13,8 +13,8 @@ jobs:
       alphas: '["qwerty"]'
       extra: '["qwerty"]'
       tap: '["qwerty"]'
-      clipboard: '["mac"]'
+      clipboard: '["win"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y", "CONFIG_ZMK_MOUSE_TICK_RATE=8", "CONFIG_ZMK_MOUSE_DEFAULT_MOVE_VAL=3000", "CONFIG_ZMK_MOUSE_DEFAULT_SCROLL_VAL=30"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y", "CONFIG_ZMK_POINTER=y", "CONFIG_ZMK_MOUSE_TICK_RATE=8", "CONFIG_ZMK_MOUSE_DEFAULT_MOVE_VAL=3000", "CONFIG_ZMK_MOUSE_DEFAULT_SCROLL_VAL=30"]'
       branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'
 
